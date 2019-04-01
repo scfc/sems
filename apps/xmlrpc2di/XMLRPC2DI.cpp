@@ -171,7 +171,7 @@ int XMLRPC2DI::load() {
 }
 
 XMLRPCServerEntry::XMLRPCServerEntry(string s, int p, string u)
-  : last_try(0), active(true), server(s), port(p), uri(u) 
+  : active(true), last_try(0), server(s), port(p), uri(u)
 { }
 
 XMLRPCServerEntry::~XMLRPCServerEntry() 
@@ -336,8 +336,8 @@ XMLRPC2DIServer::XMLRPC2DIServer(unsigned int port,
 				 XmlRpcServer* s) 
   : AmEventQueue(this),
     port(port),
-    bind_ip(bind_ip),
-    s(s), running(false),
+    s(s),
+    bind_ip(bind_ip), running(false),
     // register method 'calls'
     calls_method(s),
     // register method 'set_loglevel'
@@ -731,8 +731,8 @@ void XMLRPC2DIServer::amarg2xmlrpcval(const AmArg& a,
 DIMethodProxy::DIMethodProxy(std::string const &server_method_name, 
 			     std::string const &di_method_name, 
 			     AmDynInvokeFactory* di_factory)
-  : server_method_name(server_method_name),
-    di_method_name(di_method_name),
+  : di_method_name(di_method_name),
+    server_method_name(server_method_name),
     di_factory(di_factory),
     XmlRpcServerMethod(server_method_name)
 { }    

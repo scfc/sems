@@ -32,8 +32,8 @@
 AmSIPRegistration::AmSIPRegistration(const string& handle,
 				     const SIPRegistrationInfo& info,
 				     const string& sess_link) 
-  : info(info),
-    dlg(this),
+  : dlg(this),
+    info(info),
     cred(info.domain, info.auth_user, info.pwd),
     active(false),
     reg_begin(0),

@@ -53,7 +53,7 @@ WebConferenceDialog::WebConferenceDialog(AmPromptCollection& prompts,
   : play_list(this), separator(this, 0), prompts(prompts), state(None),
     factory(my_f), muted(false),
     connect_ts(-1), disconnect_ts(-1),
-    local_input(NULL), cred(NULL),
+    cred(NULL), local_input(NULL),
     lonely_user(true)
 {
   conf_id = room;

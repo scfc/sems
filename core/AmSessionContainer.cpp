@@ -44,7 +44,7 @@ AmSessionContainer* AmSessionContainer::_instance=NULL;
 _MONITORING_DECLARE_INTERFACE(AmSessionContainer);
 
 AmSessionContainer::AmSessionContainer()
-  : _run_cond(false), _container_closed(false), enable_unclean_shutdown(false),
+  : _container_closed(false), _run_cond(false), enable_unclean_shutdown(false),
     CPSLimit(0), CPSHardLimit(0), max_cps(0)
 {
 }

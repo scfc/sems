@@ -351,8 +351,8 @@ struct SBCCallProfile
 
   SBCCallProfile()
   : transparent_dlg_id(false),
-    auth_enabled(false),
     dlg_nat_handling(false),
+    auth_enabled(false),
     keep_vias(false),bleg_keep_vias(false),
     sst_enabled_value(false),
     rtprelay_enabled_value(false),

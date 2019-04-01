@@ -70,8 +70,8 @@ sip_trans::sip_trans()
     : msg(NULL),
       targets(NULL),
       retr_buf(NULL),
-      retr_socket(NULL),
       retr_len(0),
+      retr_socket(NULL),
       last_rseq(0),
       logger(NULL),
       canceled(false)

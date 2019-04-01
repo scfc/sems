@@ -58,8 +58,8 @@ sip_msg::sip_msg(const char* msg_buf, int msg_len)
       content_type(NULL),
       content_length(NULL),
       body(),
-      local_socket(NULL),
-      type(SIP_UNKNOWN)
+      type(SIP_UNKNOWN),
+      local_socket(NULL)
 {
     u.request = 0;
     u.reply   = 0;
@@ -85,8 +85,8 @@ sip_msg::sip_msg()
       content_type(NULL),
       content_length(NULL),
       body(),
-      local_socket(NULL),
-      type(SIP_UNKNOWN)
+      type(SIP_UNKNOWN),
+      local_socket(NULL)
 {
     u.request = 0;
     u.reply   = 0;
