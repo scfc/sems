@@ -570,7 +570,7 @@ void tcp_server_worker::run()
 {
   // fake event to prevent the event loop from exiting
   int fake_fds[2];
-  pipe(fake_fds);
+  (void) pipe(fake_fds);
   struct event* ev_default =
     event_new(evbase,fake_fds[0],
 	      EV_READ|EV_PERSIST,
