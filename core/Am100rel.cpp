@@ -8,8 +8,8 @@
 #include "log.h"
 
 Am100rel::Am100rel(AmSipDialog* dlg, AmSipDialogEventHandler* hdl)
-  : reliable_1xx(AmConfig::rel100), rseq(0), dlg(dlg),
-    rseq_confirmed(false), hdl(hdl), rseq_1st(0)
+  : reliable_1xx(AmConfig::rel100), rseq(0), rseq_confirmed(false),
+    dlg(dlg), rseq_1st(0), hdl(hdl)
 {
   // if (reliable_1xx)
   //   rseq = 0;
