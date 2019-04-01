@@ -353,7 +353,7 @@ struct SBCCallProfile
   : transparent_dlg_id(false),
     dlg_nat_handling(false),
     keep_vias(false),
-    auth_enabled(false), bleg_keep_vias(false),
+    bleg_keep_vias(false), auth_enabled(false),
     sst_enabled_value(false),
     rtprelay_enabled_value(false),
     force_symmetric_rtp_value(false),

@@ -124,7 +124,7 @@ void AmConferenceStatus::releaseChannel(const string& cid, unsigned int ch_id)
 //
 
 AmConferenceStatus::AmConferenceStatus(const string& conference_id)
-  : conf_id(conference_id), sessions(), channels(), mixer()
+  : conf_id(conference_id), sessions(), mixer(), channels()
 {
 }
 

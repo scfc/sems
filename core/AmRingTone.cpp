@@ -9,8 +9,8 @@ AmRingTone::AmRingTone(int length, int on, int off, int f, int f2)
   : AmAudio(),
     on_period(on), 
     off_period(off),
-    length(length),
-    freq(f),freq2(f2)
+    freq(f),
+    length(length),freq2(f2)
 {
   if (on_period==0 && off_period==0)
     on_period = 1; // sanity

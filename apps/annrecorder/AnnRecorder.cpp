@@ -228,7 +228,7 @@ AnnRecorderDialog::AnnRecorderDialog(const map<string, string>& params,
 				     AmPromptCollection& prompts,
 				     UACAuthCred* credentials)
   : prompts(prompts),
-    params(params), playlist(this),
+    playlist(this), params(params),
     cred(credentials)
 {
   msg_storage = AnnRecorderFactory::message_storage_fact->getInstance();

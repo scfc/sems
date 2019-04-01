@@ -56,8 +56,8 @@ sip_msg::sip_msg(const char* msg_buf, int msg_len)
       route(),
       record_route(),
       content_type(NULL),
-      content_length(NULL),
       type(SIP_UNKNOWN),
+      content_length(NULL),
       body(),
       local_socket(NULL)
 {
@@ -83,8 +83,8 @@ sip_msg::sip_msg()
       route(),
       record_route(),
       content_type(NULL),
-      content_length(NULL),
       type(SIP_UNKNOWN),
+      content_length(NULL),
       body(),
       local_socket(NULL)
 {

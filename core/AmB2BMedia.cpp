@@ -179,8 +179,8 @@ void AudioStreamData::initialize(AmB2BSession *session)
 AudioStreamData::AudioStreamData(AmB2BSession *session):
   in(NULL), initialized(false),
   dtmf_detector(NULL), dtmf_queue(NULL),
-  relay_enabled(false), relay_port(0),
-  force_symmetric_rtp(false),
+  relay_enabled(false), force_symmetric_rtp(false),
+  relay_port(0),
   outgoing_payload(UNDEFINED_PAYLOAD),
   incoming_payload(UNDEFINED_PAYLOAD),
   enable_dtmf_transcoding(false),
@@ -503,8 +503,8 @@ AmB2BMedia::RelayStreamPair::RelayStreamPair(AmB2BSession *_a, AmB2BSession *_b)
 AmB2BMedia::AmB2BMedia(AmB2BSession *_a, AmB2BSession *_b): 
   a(_a),
   b(_b),
-  ref_cnt(0), // everybody who wants to use must add one reference itselves
   callgroup(AmSession::getNewId()),
+  ref_cnt(0), // everybody who wants to use must add one reference itselves
   have_a_leg_local_sdp(false), have_a_leg_remote_sdp(false),
   have_b_leg_local_sdp(false), have_b_leg_remote_sdp(false),
   playout_type(ADAPTIVE_PLAYOUT),

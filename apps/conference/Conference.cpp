@@ -384,8 +384,8 @@ ConferenceDialog::ConferenceDialog(const string& conf_id,
   : play_list(this),
     conf_id(conf_id),
     channel(nullptr),
-    dialout_channel(dialout_channel),
     state(CS_normal),
+    dialout_channel(dialout_channel),
     allow_dialout(false)
 {
   dialedout = this->dialout_channel.get() != 0;

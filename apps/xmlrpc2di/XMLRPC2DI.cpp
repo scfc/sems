@@ -353,8 +353,8 @@ XMLRPC2DIServer::XMLRPC2DIServer(unsigned int port,
     getcallsmax_method(s),
     getcpsavg_method(s),
     getcpsmax_method(s),
-    getcpslimit_method(s),
-    setcpslimit_method(s)
+    setcpslimit_method(s),
+    getcpslimit_method(s)
 {	
   INFO("XMLRPC Server: enabled builtin method 'calls'\n");
   INFO("XMLRPC Server: enabled builtin method 'get_loglevel'\n");

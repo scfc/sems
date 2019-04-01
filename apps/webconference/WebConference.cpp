@@ -47,8 +47,8 @@ WebConferenceFactory::WebConferenceFactory(const string& _app_name)
   : AmSessionFactory(_app_name),
     AmDynInvokeFactory(_app_name),
     configured(false),
-    use_direct_room(false),
     session_timer_f(NULL),
+    use_direct_room(false),
     direct_room_strip(0),
     stats(NULL)
 {

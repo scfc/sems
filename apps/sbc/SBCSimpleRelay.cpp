@@ -44,8 +44,8 @@ SimpleRelayDialog::SimpleRelayDialog(SBCCallProfile &profile,
     parent_obj(parent_obj),
     transparent_dlg_id(false),
     keep_vias(false),
-    finished(false),
-    fix_replaces_ref(false)
+    fix_replaces_ref(false),
+    finished(false)
 {
   if(parent_obj) {
     inc_ref(parent_obj);
@@ -59,8 +59,8 @@ SimpleRelayDialog::SimpleRelayDialog(atomic_ref_cnt* parent_obj)
     parent_obj(parent_obj),
     transparent_dlg_id(false),
     keep_vias(false),
-    finished(false),
-    fix_replaces_ref(false)
+    fix_replaces_ref(false),
+    finished(false)
 {
   if(parent_obj) {
     inc_ref(parent_obj);

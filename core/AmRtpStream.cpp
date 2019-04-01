@@ -401,8 +401,8 @@ AmRtpStream::AmRtpStream(AmSession* _s, int _if)
     r_ssrc_i(false),
     passive(false),
     session(_s),
-    logger(NULL),
     passive_rtcp(false),
+    logger(NULL),
     offer_answer_used(true),
     active(false), // do not return any data unless something really received
     mute(false),
