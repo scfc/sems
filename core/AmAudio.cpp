@@ -53,8 +53,8 @@ struct CodecContainer
 
 AmAudioFormat::AmAudioFormat(int codec_id, unsigned int rate)
   : channels(1),
-    rate(rate),
     sdp_format_parameters_out(NULL),
+    rate(rate),
     codec_id(codec_id),
     codec(NULL)
 {
