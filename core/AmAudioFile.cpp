@@ -266,9 +266,9 @@ int AmAudioFile::fpopen_int(const string& filename, OpenMode mode,
 
 
 AmAudioFile::AmAudioFile()
-  : AmBufferedAudio(0, 0, 0), data_size(0),
-    fp(0), begin(0), loop(false), autorewind(false),
-    on_close_done(false),
+  : AmBufferedAudio(0, 0, 0), fp(0),
+    data_size(0), begin(0), loop(false), on_close_done(false),
+    autorewind(false),
     close_on_exit(true)
 {
 }
