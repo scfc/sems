@@ -55,8 +55,8 @@ AmAudioFormat::AmAudioFormat(int codec_id, unsigned int rate)
   : channels(1),
     rate(rate),
     sdp_format_parameters_out(NULL),
-    codec(NULL),
-    codec_id(codec_id)
+    codec_id(codec_id),
+    codec(NULL)
 {
   codec = getCodec();
 }
@@ -254,8 +254,8 @@ unsigned int AmInternalResamplerState::resample(unsigned char *samples, unsigned
 
 AmAudio::AmAudio()
   : rec_time(0),
-    fmt(new AmAudioFormat(CODEC_PCM16)),
     max_rec_time(-1),
+    fmt(new AmAudioFormat(CODEC_PCM16)),
     input_resampling_state(nullptr),
     output_resampling_state(nullptr)
 {
@@ -263,8 +263,8 @@ AmAudio::AmAudio()
 
 AmAudio::AmAudio(AmAudioFormat *_fmt)
   : rec_time(0),
-    fmt(_fmt),
     max_rec_time(-1),
+    fmt(_fmt),
     input_resampling_state(nullptr),
     output_resampling_state(nullptr)
 {
