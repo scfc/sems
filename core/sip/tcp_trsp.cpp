@@ -578,7 +578,7 @@ void tcp_server_worker::run()
   event_add(ev_default,NULL);
 
   /* Start the event loop. */
-  int ret = event_base_dispatch(evbase);
+  event_base_dispatch(evbase);
 
   // clean-up fake fds/event
   event_free(ev_default);
