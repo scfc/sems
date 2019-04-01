@@ -189,7 +189,7 @@ struct SdpMedia
 
   bool operator == (const SdpMedia& other) const;
 
-  SdpMedia() : type(MT_NONE), conn(), transport(TP_NONE), dir(DirUndefined), send(true), recv(true) {}
+  SdpMedia() : type(MT_NONE), transport(TP_NONE), conn(), dir(DirUndefined), send(true), recv(true) {}
 
   /** pretty print */
   string debugPrint() const;
