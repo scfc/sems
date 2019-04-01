@@ -14,8 +14,8 @@ using std::make_pair;
 
 RegisterDialog::RegisterDialog(SBCCallProfile &profile, vector<AmDynInvoke*> &cc_modules)
   : SimpleRelayDialog(profile, cc_modules),
-    contact_hiding(false),
     star_contact(false),
+    contact_hiding(false),
     reg_caching(false),
     max_ua_expire(0),
     min_reg_expire(0)

@@ -180,7 +180,7 @@ AmDtmfDetector::AmDtmfDetector(AmDtmfSink *dtmf_sink)
   : m_dtmfSink(dtmf_sink), m_rtpDetector(this),
     m_sipDetector(this),
     m_eventPending(false), m_sipEventReceived(false),
-    m_inbandEventReceived(false), m_inband_type(Dtmf::SEMSInternal),
+    m_inband_type(Dtmf::SEMSInternal), m_inbandEventReceived(false),
     m_rtpEventReceived(false),
     m_currentEvent(-1),
     m_current_eventid_i(false)
@@ -396,7 +396,7 @@ void AmDtmfDetector::putDtmfAudio(const unsigned char *buf, int size, unsigned l
 // AmRtpDtmfDetector methods
 AmRtpDtmfDetector::AmRtpDtmfDetector(AmKeyPressSink *keysink)
   : m_keysink(keysink), m_eventPending(false), m_currentTS(0),
-  m_packetCount(0), m_currentTS_i(false), m_lastTS_i(false)
+  m_currentTS_i(false), m_packetCount(0), m_lastTS_i(false)
 {
 }
 
@@ -554,8 +554,8 @@ static char dtmf_matrix[4][4] =
 AmSemsInbandDtmfDetector::AmSemsInbandDtmfDetector(AmKeyPressSink *keysink, int sample_rate)
   : AmInbandDtmfDetector(keysink),
     m_last(' '),
-    m_idx(0),
     SAMPLERATE(sample_rate),
+    m_idx(0),
     m_count(0)
 {
   /* precalculate 2 * cos (2 PI k / N) */

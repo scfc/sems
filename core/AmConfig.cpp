@@ -171,8 +171,8 @@ AmConfig::SIP_interface::SIP_interface()
     LocalPort(5060),
     SigSockOpts(0),
     tcp_connect_timeout(DEFAULT_TCP_CONNECT_TIMEOUT),
-    RtpInterface(-1),
-    tcp_idle_timeout(DEFAULT_TCP_IDLE_TIMEOUT)
+    tcp_idle_timeout(DEFAULT_TCP_IDLE_TIMEOUT),
+    RtpInterface(-1)
 {
 }
 

@@ -725,8 +725,8 @@ AnswerMachineDialog::AnswerMachineDialog(const string& user,
 					 int vm_mode,
 					 const EmailTmplDict& template_variables,
 					 const EmailTemplate* tmpl)
-  : announce_file(announce_file), announce_fp(announce_fp),
-    playlist(this), tmpl(tmpl),
+  : announce_file(announce_file), playlist(this),
+    announce_fp(announce_fp), tmpl(tmpl),
   status(0), vm_mode(vm_mode),
   email_dict(template_variables)
 

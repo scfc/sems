@@ -53,7 +53,7 @@ struct JsonRpcResponse {
   bool is_error;
   
   JsonRpcResponse(bool is_error, string id, const AmArg& data)
-  : id(id), is_error(is_error), data(data) { }
+  : id(id), data(data), is_error(is_error) { }
   JsonRpcResponse(bool is_error, string id) 
   : is_error(is_error), id(id) { }
 

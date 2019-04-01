@@ -57,8 +57,8 @@ sip_msg::sip_msg(const char* msg_buf, int msg_len)
       record_route(),
       content_type(NULL),
       content_length(NULL),
-      body(),
       type(SIP_UNKNOWN),
+      body(),
       local_socket(NULL)
 {
     u.request = 0;
@@ -84,8 +84,8 @@ sip_msg::sip_msg()
       record_route(),
       content_type(NULL),
       content_length(NULL),
-      body(),
       type(SIP_UNKNOWN),
+      body(),
       local_socket(NULL)
 {
     u.request = 0;

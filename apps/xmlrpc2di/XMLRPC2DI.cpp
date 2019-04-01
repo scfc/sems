@@ -335,8 +335,8 @@ XMLRPC2DIServer::XMLRPC2DIServer(unsigned int port,
 				 string direct_export,
 				 XmlRpcServer* s) 
   : AmEventQueue(this),
-    port(port),
     s(s),
+    port(port),
     bind_ip(bind_ip), running(false),
     // register method 'calls'
     calls_method(s),

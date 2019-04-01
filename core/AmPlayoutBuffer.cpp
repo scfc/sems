@@ -46,8 +46,8 @@
 
 AmPlayoutBuffer::AmPlayoutBuffer(AmPLCBuffer *plcbuffer, unsigned int sample_rate)
   : r_ts(0),w_ts(0), last_ts_i(false),
-    sample_rate(sample_rate), recv_offset_i(false),
-    m_plcbuffer(plcbuffer)
+    sample_rate(sample_rate), m_plcbuffer(plcbuffer),
+    recv_offset_i(false)
 {
   buffer.clear_all();
 }

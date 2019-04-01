@@ -44,7 +44,7 @@ DSMCall::DSMCall(const DSMScriptConfig& config,
 		 UACAuthCred* credentials)
   : 
   prompts(prompts),
-  run_invite_event(config.RunInviteEvent), default_prompts(prompts), startDiagName(startDiagName),
+  default_prompts(prompts), run_invite_event(config.RunInviteEvent), startDiagName(startDiagName),
   playlist(this), cred(credentials), 
   rec_file(NULL),
   process_invite(true), process_sessionstart(true)

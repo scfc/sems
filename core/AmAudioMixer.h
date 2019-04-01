@@ -92,7 +92,7 @@ class AmAudioMixerConnector
 		       AmAudio* mix_channel, 
 		       AmMutex* audio_mut = NULL, std::set<AmAudio*>* sinks = NULL) 
    : mixer(mixer), channel(channel), audio_mut(audio_mut),
-    mix_channel(mix_channel), sinks(sinks) { }
+    sinks(sinks), mix_channel(mix_channel) { }
   ~AmAudioMixerConnector() { }
 
 };

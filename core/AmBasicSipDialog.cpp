@@ -23,7 +23,7 @@ const char* AmBasicSipDialog::status2str[AmBasicSipDialog::__max_Status] = {
 
 AmBasicSipDialog::AmBasicSipDialog(AmBasicSipEventHandler* h)
   : status(Disconnected),
-    cseq(10),hdl(h),r_cseq_i(false),
+    hdl(h),cseq(10),r_cseq_i(false),
     logger(0),
     outbound_proxy(AmConfig::OutboundProxy),
     force_outbound_proxy(AmConfig::ForceOutboundProxy),

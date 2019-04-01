@@ -57,7 +57,7 @@ VoiceboxDialog::VoiceboxDialog(const string& user,
 			       const string& pin, 
 			       AmPromptCollection* prompts,
 			       PromptOptions prompt_options)
-  : user(user), domain(domain), prompts(prompts),
+  : user(user), prompts(prompts), domain(domain),
     pin(pin), prompt_options(prompt_options),
     play_list(this),
     userdir_open(false), in_saved_msgs(false),

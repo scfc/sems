@@ -70,7 +70,7 @@ class Reinvite: public SessionUpdate
         bool _establishing = false,
         bool _relayed_invite = false, unsigned int _r_cseq = 0):
           hdrs(_hdrs), body(_body), relayed_invite(_relayed_invite),
-          establishing(_establishing), r_cseq(_r_cseq) { }
+          r_cseq(_r_cseq), establishing(_establishing) { }
 };
 
 class SessionUpdateTimer: public DirectAppTimer

@@ -43,8 +43,8 @@ SimpleRelayDialog::SimpleRelayDialog(SBCCallProfile &profile,
     AmEventQueue(this),
     parent_obj(parent_obj),
     transparent_dlg_id(false),
-    finished(false),
     keep_vias(false),
+    finished(false),
     fix_replaces_ref(false)
 {
   if(parent_obj) {
@@ -58,8 +58,8 @@ SimpleRelayDialog::SimpleRelayDialog(atomic_ref_cnt* parent_obj)
     AmEventQueue(this),
     parent_obj(parent_obj),
     transparent_dlg_id(false),
-    finished(false),
     keep_vias(false),
+    finished(false),
     fix_replaces_ref(false)
 {
   if(parent_obj) {
