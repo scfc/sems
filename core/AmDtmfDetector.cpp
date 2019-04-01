@@ -181,8 +181,8 @@ AmDtmfDetector::AmDtmfDetector(AmDtmfSink *dtmf_sink)
     m_sipDetector(this),
     m_inband_type(Dtmf::SEMSInternal), m_eventPending(false),
     m_sipEventReceived(false), m_inbandEventReceived(false),
-    m_rtpEventReceived(false),
     m_currentEvent(-1),
+    m_rtpEventReceived(false),
     m_current_eventid_i(false)
 {
   //#ifndef USE_SPANDSP

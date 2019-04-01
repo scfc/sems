@@ -405,8 +405,8 @@ AmRtpStream::AmRtpStream(AmSession* _s, int _if)
     logger(NULL),
     offer_answer_used(true),
     active(false), // do not return any data unless something really received
-    mute(false),
     hold(false),
+    mute(false),
     receiving(true),
     monitor_rtp_timeout(true),
     relay_stream(NULL),

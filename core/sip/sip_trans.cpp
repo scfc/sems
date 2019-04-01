@@ -68,8 +68,8 @@ inline trans_timer** fetch_timer(unsigned int timer_type, trans_timer** base)
 
 sip_trans::sip_trans()
     : msg(NULL),
-      targets(NULL),
       last_rseq(0),
+      targets(NULL),
       retr_buf(NULL),
       retr_len(0),
       retr_socket(NULL),
