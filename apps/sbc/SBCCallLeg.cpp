@@ -123,8 +123,8 @@ SBCCallLeg::SBCCallLeg(const SBCCallProfile& call_profile, AmSipDialog* p_dlg,
     m_state(BB_Init),
     cc_timer_id(SBC_TIMER_ID_CALL_TIMERS_START), auth(NULL),
     auth_di(NULL),
-    call_profile(call_profile),
     ext_cc_timer_id(SBC_TIMER_ID_CALL_TIMERS_END + 1),
+    call_profile(call_profile),
     cc_started(false),
     logger(NULL)
 {

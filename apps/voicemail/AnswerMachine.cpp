@@ -727,8 +727,8 @@ AnswerMachineDialog::AnswerMachineDialog(const string& user,
 					 const EmailTemplate* tmpl)
   : playlist(this), announce_file(announce_file),
     announce_fp(announce_fp), tmpl(tmpl),
-  status(0), vm_mode(vm_mode),
-  email_dict(template_variables)
+  status(0), email_dict(template_variables),
+  vm_mode(vm_mode)
 
 {
   email_dict["user"] = user;

@@ -64,7 +64,7 @@ const char* __sub_state_str[] = {
 
 SingleSubscription::SingleSubscription(AmSipSubscription* subs, Role role,
 				       const string& event, const string& id)
-    : subs(subs), event(event), id(id), sub_state(SubState_init),
+    : subs(subs), event(event), sub_state(SubState_init), id(id),
       role(role), pending_subscribe(0), expires(0),
       timer_n(this,RFC6665_TIMER_N),timer_expires(this,SUBSCRIPTION_EXPIRE)
 {
@@ -672,7 +672,7 @@ SIPSubscriptionEvent::SIPSubscriptionEvent(SubscriptionStatus status,
 					   unsigned int code, 
 					   const string& reason)
   : AmEvent(E_SIP_SUBSCRIPTION), handle(handle),
-    status(status), code(code), expires(expires),
+    code(code), status(status), expires(expires),
     reason(reason), notify_body(nullptr) 
 {}
   

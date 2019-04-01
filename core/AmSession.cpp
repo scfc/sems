@@ -68,7 +68,7 @@ struct timeval avg_first_timestamp = avg_last_timestamp;
 
 AmSession::AmSession(AmSipDialog* p_dlg)
   : AmEventQueue(this), input(NULL),
-    output(NULL), sess_stopped(false),
+    sess_stopped(false), output(NULL),
     dlg(p_dlg),
     m_dtmfDetector(this), m_dtmfEventQueue(&m_dtmfDetector),
     m_dtmfDetectionEnabled(true),

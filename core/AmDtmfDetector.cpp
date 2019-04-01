@@ -179,7 +179,7 @@ void AmSipDtmfDetector::process(AmSipDtmfEvent *evt)
 AmDtmfDetector::AmDtmfDetector(AmDtmfSink *dtmf_sink)
   : m_dtmfSink(dtmf_sink), m_rtpDetector(this),
     m_sipDetector(this),
-    m_eventPending(false), m_inband_type(Dtmf::SEMSInternal),
+    m_inband_type(Dtmf::SEMSInternal), m_eventPending(false),
     m_sipEventReceived(false), m_inbandEventReceived(false),
     m_rtpEventReceived(false),
     m_currentEvent(-1),
