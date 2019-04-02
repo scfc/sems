@@ -58,10 +58,10 @@ VoiceboxDialog::VoiceboxDialog(const string& user,
 			       AmPromptCollection* prompts,
 			       PromptOptions prompt_options)
   : prompts(prompts), prompt_options(prompt_options), user(user),
-    domain(domain), pin(pin),
-    play_list(this),
-    userdir_open(false), in_saved_msgs(false),
-    do_save_cur_msg(false)
+    domain(domain), play_list(this),
+    pin(pin),
+    userdir_open(false), do_save_cur_msg(false),
+    in_saved_msgs(false)
 {
   setDtmfDetectionEnabled(true);
   msg_storage = VoiceboxFactory::MessageStorage->getInstance();
