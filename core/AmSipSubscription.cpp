@@ -64,9 +64,9 @@ const char* __sub_state_str[] = {
 
 SingleSubscription::SingleSubscription(AmSipSubscription* subs, Role role,
 				       const string& event, const string& id)
-    : sub_state(SubState_init), subs(subs), event(event), id(id),
-      role(role), pending_subscribe(0), expires(0),
-      timer_n(this,RFC6665_TIMER_N),timer_expires(this,SUBSCRIPTION_EXPIRE)
+    : sub_state(SubState_init), pending_subscribe(0), expires(0), timer_n(this,RFC6665_TIMER_N), timer_expires(this,SUBSCRIPTION_EXPIRE),
+      subs(subs), event(event),
+      id(id),role(role)
 {
   assert(subs); 
 }

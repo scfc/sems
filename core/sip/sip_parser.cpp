@@ -45,6 +45,7 @@ using std::unique_ptr;
 
 sip_msg::sip_msg(const char* msg_buf, int msg_len)
     : buf(NULL),
+      type(SIP_UNKNOWN),
       hdrs(),
       to(NULL),
       from(NULL),
@@ -53,7 +54,6 @@ sip_msg::sip_msg(const char* msg_buf, int msg_len)
       via1(NULL),via_p1(NULL),
       callid(NULL),
       contacts(),
-      type(SIP_UNKNOWN),
       route(),
       record_route(),
       content_type(NULL),
@@ -72,6 +72,7 @@ sip_msg::sip_msg(const char* msg_buf, int msg_len)
 
 sip_msg::sip_msg()
     : buf(NULL),
+      type(SIP_UNKNOWN),
       hdrs(),
       to(NULL),
       from(NULL),
@@ -80,7 +81,6 @@ sip_msg::sip_msg()
       via1(NULL),via_p1(NULL),
       callid(NULL),
       contacts(),
-      type(SIP_UNKNOWN),
       route(),
       record_route(),
       content_type(NULL),

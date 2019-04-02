@@ -178,13 +178,13 @@ void AudioStreamData::initialize(AmB2BSession *session)
 
 AudioStreamData::AudioStreamData(AmB2BSession *session):
   in(NULL), initialized(false),
-  force_symmetric_rtp(false), dtmf_detector(NULL),
-  dtmf_queue(NULL), relay_enabled(false),
+  force_symmetric_rtp(false), enable_dtmf_transcoding(false),
+  dtmf_detector(NULL), dtmf_queue(NULL),
+  relay_enabled(false),
   relay_port(0),
-  enable_dtmf_transcoding(false),
-  outgoing_payload(UNDEFINED_PAYLOAD),
-  relay_paused(false), muted(false),
-  incoming_payload(UNDEFINED_PAYLOAD), receiving(true)
+  relay_paused(false),
+  muted(false), receiving(true),
+  outgoing_payload(UNDEFINED_PAYLOAD), incoming_payload(UNDEFINED_PAYLOAD)
 {
   if (session) initialize(session);
   else stream = NULL; // not initialized yet
