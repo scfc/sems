@@ -181,10 +181,10 @@ AudioStreamData::AudioStreamData(AmB2BSession *session):
   force_symmetric_rtp(false), dtmf_detector(NULL),
   dtmf_queue(NULL), relay_enabled(false),
   relay_port(0),
-  outgoing_payload(UNDEFINED_PAYLOAD),
   enable_dtmf_transcoding(false),
-  incoming_payload(UNDEFINED_PAYLOAD),
-  muted(false), relay_paused(false), receiving(true)
+  outgoing_payload(UNDEFINED_PAYLOAD),
+  relay_paused(false), muted(false),
+  incoming_payload(UNDEFINED_PAYLOAD), receiving(true)
 {
   if (session) initialize(session);
   else stream = NULL; // not initialized yet
