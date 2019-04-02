@@ -733,8 +733,8 @@ DIMethodProxy::DIMethodProxy(std::string const &server_method_name,
 			     AmDynInvokeFactory* di_factory)
   : di_method_name(di_method_name),
     server_method_name(server_method_name),
-    di_factory(di_factory),
-    XmlRpcServerMethod(server_method_name)
+    XmlRpcServerMethod(server_method_name),
+    di_factory(di_factory)
 { }    
   
 void DIMethodProxy::execute(XmlRpcValue& params, 
