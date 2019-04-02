@@ -746,7 +746,6 @@ int AmConfig::insert_SIP_interface_mapping(const SIP_interface& intf) {
 
 static int readSIPInterface(AmConfigReader& cfg, const string& i_name)
 {
-  int ret=0;
   AmConfig::SIP_interface intf;
 
   string suffix;
@@ -769,7 +768,6 @@ static int readSIPInterface(AmConfigReader& cfg, const string& i_name)
       ERROR("sip_port%s: invalid sip port specified (%s)\n",
 	    suffix.c_str(),
 	    sip_port_str.c_str());
-      ret = -1;
     }
   }
 
@@ -844,7 +842,6 @@ int AmConfig::insert_RTP_interface(const RTP_interface& intf)
 
 static int readRTPInterface(AmConfigReader& cfg, const string& i_name)
 {
-  int ret=0;
   AmConfig::RTP_interface intf;
 
   string suffix;
@@ -872,7 +869,6 @@ static int readRTPInterface(AmConfigReader& cfg, const string& i_name)
 	      &(intf.RtpLowPort)) != 1){
       ERROR("rtp_low_port%s: invalid port number (%s)\n",
 	    suffix.c_str(),rtp_low_port_str.c_str());
-      ret = -1;
     }
   }
 
@@ -883,7 +879,6 @@ static int readRTPInterface(AmConfigReader& cfg, const string& i_name)
 	      &(intf.RtpHighPort)) != 1){
       ERROR("rtp_high_port%s: invalid port number (%s)\n",
 	    suffix.c_str(),rtp_high_port_str.c_str());
-      ret = -1;
     }
   }
 
