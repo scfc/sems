@@ -134,8 +134,8 @@ AmSessionEventHandler* UACAuthFactory::getHandler(AmBasicSipDialog* dlg,
 
 UACAuth::UACAuth(AmBasicSipDialog* dlg,
 		 UACAuthCred* cred)
-  : credential(cred),
-    AmSessionEventHandler(),
+  : AmSessionEventHandler(),
+    credential(cred),
     dlg(dlg),
     nonce_count(0),
     nonce_reuse(false)

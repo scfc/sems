@@ -44,10 +44,10 @@ DSMCall::DSMCall(const DSMScriptConfig& config,
 		 UACAuthCred* credentials)
   : 
   prompts(prompts),
-  default_prompts(prompts), startDiagName(startDiagName), cred(credentials),
+  default_prompts(prompts), cred(credentials), startDiagName(startDiagName),
   playlist(this), run_invite_event(config.RunInviteEvent),
-  rec_file(NULL),
-  process_invite(true), process_sessionstart(true)
+  process_invite(true),
+  rec_file(NULL), process_sessionstart(true)
 {
   diags.addToEngine(&engine);
   set_sip_relay_only(false);
