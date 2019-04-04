@@ -351,6 +351,7 @@ struct SBCCallProfile
 
   SBCCallProfile()
   : transparent_dlg_id(false),
+    have_aleg_sdpfilter(false),
     dlg_nat_handling(false),
     keep_vias(false),
     bleg_keep_vias(false), sst_enabled_value(false),
@@ -358,7 +359,6 @@ struct SBCCallProfile
     rtprelay_enabled_value(false),
     force_symmetric_rtp_value(false),
     aleg_force_symmetric_rtp_value(false),
-    have_aleg_sdpfilter(false),
     rtprelay_transparent_seqno(true),
     rtprelay_transparent_ssrc(true),
     rtprelay_interface_value(-1),

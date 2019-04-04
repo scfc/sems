@@ -153,8 +153,8 @@ SBCCallLeg::SBCCallLeg(SBCCallLeg* caller, AmSipDialog* p_dlg,
 		       AmSipSubscription* p_subs)
   : CallLeg(caller,p_dlg,p_subs), auth(NULL),
     auth_di(NULL),
-    call_profile(caller->getCallProfile()),
     ext_cc_timer_id(SBC_TIMER_ID_CALL_TIMERS_END + 1),
+    call_profile(caller->getCallProfile()),
     cc_started(false),
     logger(NULL)
 {

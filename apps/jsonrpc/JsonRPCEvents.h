@@ -166,7 +166,7 @@ struct JsonServerSendMessageEvent
 			    JsonrpcNetstringsConnection* conn)
    : JsonServerEvent(conn, SendMessage),
     is_reply(e.is_reply), method(e.method),
-    id(e.id), reply_link(e.reply_link), params(e.params),
+    id(e.id), params(e.params), reply_link(e.reply_link),
     is_error(e.is_error), udata(e.udata) {
     connection_id = e.connection_id;
   }
