@@ -353,8 +353,8 @@ struct SBCCallProfile
   : transparent_dlg_id(false),
     dlg_nat_handling(false),
     keep_vias(false),
-    have_aleg_sdpfilter(false),
     bleg_keep_vias(false), sst_enabled_value(false),
+    have_aleg_sdpfilter(false),
     auth_enabled(false),
     rtprelay_enabled_value(false),
     force_symmetric_rtp_value(false),
@@ -368,11 +368,11 @@ struct SBCCallProfile
     outbound_interface_value(-1),
     contact_hiding(false),
     reg_caching(false),
-    log_rtp(false),
     next_hop_1st_req(false),
+    log_rtp(false),
     patch_ruri_next_hop(false),
-    log_sip(false),
     next_hop_fixed(false),
+    log_sip(false),
     allow_subless_notify(false),
     max_491_retry_time(2000)
   { }
