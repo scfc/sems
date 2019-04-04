@@ -151,8 +151,8 @@ SBCCallLeg::SBCCallLeg(const SBCCallProfile& call_profile, AmSipDialog* p_dlg,
 // B leg constructor (from SBCCalleeSession)
 SBCCallLeg::SBCCallLeg(SBCCallLeg* caller, AmSipDialog* p_dlg,
 		       AmSipSubscription* p_subs)
-  : CallLeg(caller,p_dlg,p_subs), auth(NULL),
-    ext_cc_timer_id(SBC_TIMER_ID_CALL_TIMERS_END + 1),
+  : CallLeg(caller,p_dlg,p_subs), ext_cc_timer_id(SBC_TIMER_ID_CALL_TIMERS_END + 1),
+    auth(NULL),
     auth_di(NULL),
     call_profile(caller->getCallProfile()),
     cc_started(false),
