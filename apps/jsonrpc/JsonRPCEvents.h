@@ -160,7 +160,7 @@ struct JsonServerSendMessageEvent
 			     const string& reply_link = "")
     : JsonServerEvent(connection_id, SendMessage),
     is_reply(is_reply), method(method),
-    reply_link(reply_link), id(id), params(params), udata(udata) { }
+    id(id), reply_link(reply_link), params(params), udata(udata) { }
 
  JsonServerSendMessageEvent(const JsonServerSendMessageEvent& e,
 			    JsonrpcNetstringsConnection* conn)

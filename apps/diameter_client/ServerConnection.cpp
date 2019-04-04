@@ -106,7 +106,7 @@ void ServerConnection::process(AmEvent* ev) {
 }
 
 ServerConnection::ServerConnection() 
-  : open(false), AmEventQueue(this),
+  : AmEventQueue(this), open(false),
     server_port(-1), timeout_check_cntr(0),
     request_timeout(3000)
 {

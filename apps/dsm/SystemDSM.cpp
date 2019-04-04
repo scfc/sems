@@ -13,7 +13,7 @@
 SystemDSM::SystemDSM(const DSMScriptConfig& config,
 		     const string& startDiagName,
 		     bool reload) 
-  : stop_requested(false), AmEventQueue(this), 
+  : AmEventQueue(this), stop_requested(false),
     startDiagName(startDiagName), dummy_session(this), 
     reload(reload)
 {

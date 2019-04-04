@@ -116,8 +116,8 @@ struct SIPNewRegistrationEvent : public AmEvent {
   SIPNewRegistrationEvent(const SIPRegistrationInfo& info,
 			  const string& handle, 
 			  const string& sess_link)
-    : handle(handle), sess_link(sess_link), info(info),
-       AmEvent(SIPRegistrarClient::AddRegistration) { }
+    : AmEvent(SIPRegistrarClient::AddRegistration),
+      handle(handle), sess_link(sess_link), info(info) { }
 
 
   string handle;

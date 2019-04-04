@@ -729,8 +729,8 @@ void XMLRPC2DIServer::amarg2xmlrpcval(const AmArg& a,
 DIMethodProxy::DIMethodProxy(std::string const &server_method_name, 
 			     std::string const &di_method_name, 
 			     AmDynInvokeFactory* di_factory)
-  : di_method_name(di_method_name),
-    XmlRpcServerMethod(server_method_name),
+  : XmlRpcServerMethod(server_method_name),
+    di_method_name(di_method_name),
     server_method_name(server_method_name),
     di_factory(di_factory)
 { }    
