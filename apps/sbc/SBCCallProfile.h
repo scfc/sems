@@ -367,13 +367,13 @@ struct SBCCallProfile
     rtprelay_bw_limit_peak(-1),
     outbound_interface_value(-1),
     contact_hiding(false),
-    reg_caching(false),
     next_hop_1st_req(false),
-    log_rtp(false),
+    reg_caching(false),
     patch_ruri_next_hop(false),
+    log_rtp(false),
     next_hop_fixed(false),
-    log_sip(false),
     allow_subless_notify(false),
+    log_sip(false),
     max_491_retry_time(2000)
   { }
 
