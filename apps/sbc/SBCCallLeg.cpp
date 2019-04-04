@@ -125,8 +125,8 @@ SBCCallLeg::SBCCallLeg(const SBCCallProfile& call_profile, AmSipDialog* p_dlg,
     auth(NULL),
     auth_di(NULL),
     call_profile(call_profile),
-    cc_started(false),
-    logger(NULL)
+    logger(NULL),
+    cc_started(false)
 {
 #ifdef WITH_ZRTP
   enable_zrtp = false;

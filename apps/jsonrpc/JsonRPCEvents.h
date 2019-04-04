@@ -134,8 +134,8 @@ struct JsonServerEvent
 
  JsonServerEvent(const string& connection_id,
 		 EventType ev_type)
-   : AmEvent(ev_type), connection_id(connection_id),
-    conn(NULL) { }
+   : AmEvent(ev_type), conn(NULL),
+    connection_id(connection_id) { }
 
   ~JsonServerEvent() { }
 };
