@@ -174,7 +174,7 @@ AmSession* Click2DialFactory::onInvite(const AmSipRequest& req, const string& ap
 
 C2DCallerDialog::C2DCallerDialog(const AmSipRequest& req,
 const string& filename, const string& c_uri, UACAuthCred* credentials)
-: filename(filename), AmB2BCallerSession(), callee_uri(c_uri),
+: AmB2BCallerSession(), filename(filename), callee_uri(c_uri),
 cred(credentials)
 {
   set_sip_relay_only(false);  

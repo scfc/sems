@@ -129,8 +129,8 @@ class SIPRemoveRegistrationEvent : public AmEvent {
  public:
   string handle;
   SIPRemoveRegistrationEvent(const string& handle) 
-    : handle(handle), 
-    AmEvent(SIPRegistrarClient::RemoveRegistration) { }
+    : AmEvent(SIPRegistrarClient::RemoveRegistration),
+    handle(handle) { }
 };
 
 #endif

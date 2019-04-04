@@ -47,7 +47,7 @@ DSMCall::DSMCall(const DSMScriptConfig& config,
   prompts(prompts), default_prompts(prompts), startDiagName(startDiagName),
   playlist(this), run_invite_event(config.RunInviteEvent),
   process_invite(true),
-  rec_file(NULL), process_sessionstart(true)
+  process_sessionstart(true), rec_file(NULL)
 {
   diags.addToEngine(&engine);
   set_sip_relay_only(false);
